@@ -1,3 +1,6 @@
 [submodule "tic-tac-toe"]
 	path = tic-tac-toe
 	url = https://github.com/ahtohbi4/tic-tac-toe.git
+[submodule "vendors/normalize.css"]
+	path = vendors/normalize.css
+	url = https://github.com/necolas/normalize.css.git
