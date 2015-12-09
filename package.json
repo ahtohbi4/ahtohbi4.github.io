@@ -17,5 +17,11 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/ahtohbi4/ahtohbi4.github.io/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-rename": "^1.2.2"
   }
 }
