@@ -3,7 +3,7 @@ var rename = require('gulp-rename');
 // @see: https://github.com/jonschlinkert/gulp-htmlmin
 var htmlmin = require('gulp-htmlmin');
 
-var paths = {
+var PATHS = {
     src: {
         html: 'app/resources/views/**.html',
         css: [
@@ -20,21 +20,21 @@ var paths = {
 };
 
 gulp.task('html', function () {
-    gulp.src(paths.src.html)
+    gulp.src(PATHS.src.html)
         .pipe(rename('index.html'))
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
-        .pipe(gulp.dest(paths.dest.html));
+        .pipe(gulp.dest(PATHS.dest.html));
 });
 
 // @see: https://github.com/contra/gulp-concat
 var concat = require('gulp-concat');
 
 gulp.task('css', function () {
-    gulp.src(paths.src.css)
+    gulp.src(PATHS.src.css)
         .pipe(concat('style.css'))
-        .pipe(gulp.dest(paths.dest.css));
+        .pipe(gulp.dest(PATHS.dest.css));
 });
 
 gulp.task('js', function () {});
@@ -46,7 +46,7 @@ gulp.task('default', [
 ]);
 
 gulp.task('watch', ['default'], function() {
-    gulp.watch(paths.src.js, ['js']);
-    gulp.watch(paths.src.css, ['css']);
-    gulp.watch(paths.src.html, ['html']);
+    gulp.watch(PATHS.src.js, ['js']);
+    gulp.watch(PATHS.src.css, ['css']);
+    gulp.watch(PATHS.src.html, ['html']);
 });
