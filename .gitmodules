@@ -7,3 +7,6 @@
 [submodule "typography"]
 	path = typography
 	url = https://github.com/ahtohbi4/typography.git
+[submodule "postcss-bgimage"]
+	path = postcss-bgimage
+	url = https://github.com/ahtohbi4/postcss-bgimage.git
