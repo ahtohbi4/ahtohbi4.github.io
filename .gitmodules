@@ -10,3 +10,6 @@
 [submodule "postcss-bgimage"]
 	path = postcss-bgimage
 	url = https://github.com/ahtohbi4/postcss-bgimage.git
+[submodule "poker"]
+	path = poker
+	url = https://github.com/ahtohbi4/poker.git
