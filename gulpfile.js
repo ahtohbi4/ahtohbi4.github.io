@@ -23,7 +23,8 @@ gulp.task('html', function () {
     gulp.src(PATHS.src.html)
         .pipe(rename('index.html'))
         .pipe(htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: true,
+            removeComments: true
         }))
         .pipe(gulp.dest(PATHS.dest.html));
 });
