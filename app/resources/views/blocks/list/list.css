@@ -1,0 +1,10 @@
+.list {
+    margin: 0 0 27px 0;
+    padding: 0 0 0 30px;
+}
+.list > li {
+    margin: 0 0 18px 0;
+}
+.list_space_0 > li {
+    margin-bottom: 0;
+}

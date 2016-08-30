@@ -1,3 +1,13 @@
 h1 {
-    font: 100 24px/27px Georgia;
+    margin: 0 0 27px;
+    font: 100 24px/27px 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font: 100 24px/27px 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 18px;
 }

@@ -1,0 +1,13 @@
+.tag {
+    display: inline-block;
+    margin: 0 5px 1px 0;
+    padding: 1px 4px 0 4px;
+    background: #eee;
+    border-radius: 3px;
+    color: #555;
+    font: 100 14px/16px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    vertical-align: top;
+}
+.tag:last-of-type {
+    margin-right: 0;
+}

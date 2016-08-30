@@ -423,10 +423,62 @@ th {
   padding: 0;
 }
 
+a {
+    color: #f30;
+}
+
+.list {
+    margin: 0 0 27px 0;
+    padding: 0 0 0 30px;
+}
+.list > li {
+    margin: 0 0 18px 0;
+}
+.list_space_0 > li {
+    margin-bottom: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font: 100 14px/18px 'Arial Narrow', Arial, sans-serif;
+}
+
 .page {
     padding: 18px 20px 0;
 }
 
+.tag {
+    display: inline-block;
+    margin: 0 5px 1px 0;
+    padding: 1px 4px 0 4px;
+    background: #eee;
+    border-radius: 3px;
+    color: #555;
+    font: 100 14px/16px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    vertical-align: top;
+}
+.tag:last-of-type {
+    margin-right: 0;
+}
+
+.tags {
+    margin: 0 0 18px;
+    padding: 0;
+    list-style: none;
+}
+
 h1 {
-    font: 100 24px/27px Georgia;
+    margin: 0 0 27px;
+    font: 100 24px/27px 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font: 100 24px/27px 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 18px;
 }
