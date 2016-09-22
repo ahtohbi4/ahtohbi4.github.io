@@ -39,7 +39,8 @@ config.entry = (() => {
 // Output
 config.output = {
     filename: '[name]',
-    path: './'
+    path: __dirname,
+    publicPath: '/'
 };
 
 // Module
@@ -129,7 +130,7 @@ config.postcss = (() => {
         })
     ];
 
-    if (__DEV__) {
+    if (!__DEV__) {
         result.push(csso({
             debug: 3,
             restructure: true
