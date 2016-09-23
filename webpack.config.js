@@ -1,9 +1,11 @@
 'use strict'
 
+const NODE_ENV = process.env.NODE_ENV;
+const __DEV__ = (NODE_ENV !== 'production');
+console.log('Dev mode is', (__DEV__ ? 'on' : 'off'));
+
 const path = require('path');
 const webpack = require('webpack');
-
-const __DEV__ = JSON.stringify(JSON.parse(process.env.DEBUG || 'false')) === 'true';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractHTML = new ExtractTextPlugin('index.html');
