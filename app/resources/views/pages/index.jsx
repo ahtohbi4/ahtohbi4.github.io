@@ -12,7 +12,7 @@ class Root extends Component {
         let projects = [];
 
         for (let id in data.projects) {
-            projects.push(<div>{data.projects[id].name}</div>);
+            projects.push(<div key={id}>{data.projects[id].name}</div>);
         }
 
         return (
