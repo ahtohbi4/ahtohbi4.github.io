@@ -16,13 +16,25 @@ const PORT = 8080;
 
 let config = {};
 
-// Dev Tool
+/**
+ * Dev Tool
+ *
+ * @member {string} devtool
+ */
 config.devtool = __DEV__ ? 'eval' : false;
 
-// Watch
+/**
+ * Watch
+ *
+ * @member {boolean} watch
+ */
 config.watch = __DEV__;
 
-// Entry
+/**
+ * Entry
+ *
+ * @member {object} entry
+ */
 config.entry = (() => {
     let result = {
         'index.html': './app/resources/views/pages/index.html',
@@ -38,14 +50,22 @@ config.entry = (() => {
     return result;
 }());
 
-// Output
+/**
+ * Output
+ *
+ * @member {object} output
+ */
 config.output = {
     filename: '[name]',
     path: __dirname,
     publicPath: '/'
 };
 
-// Module
+/**
+ * Module
+ *
+ * @member {object} module
+ */
 config.module = {
     loaders: [
         {
@@ -83,7 +103,11 @@ config.module = {
     ]
 };
 
-// Plugin
+/**
+ * Plugins
+ *
+ * @member {array} plugins
+ */
 config.plugins = (() => {
     let result = [
         new webpack.DefinePlugin({
@@ -111,7 +135,11 @@ config.plugins = (() => {
     return result;
 }());
 
-// PostCSS
+/**
+ * PostCSS
+ *
+ * @member {array} postcss
+ */
 const autoprefixer = require('autoprefixer');
 const csso = require('postcss-csso');
 const atImport = require('postcss-import');
@@ -146,7 +174,11 @@ config.postcss = (() => {
     return result;
 }());
 
-// Resolve
+/**
+ * Resolve
+ *
+ * @member {object} resolve
+ */
 config.resolve = {
     extensions: [
         '',
@@ -155,7 +187,11 @@ config.resolve = {
     ]
 };
 
-// Dev Server
+/**
+ * Dev Server
+ *
+ * @member {object} devServer
+ */
 config.devServer = (__DEV__ ? {
     host: HOST,
     port: PORT
