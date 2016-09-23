@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
 
-const data = require('../../../../data/projects.yaml');
+const PROJECTS = require('../../../../data/projects.yaml').projects;
+const TECHS = require('../../../../data/technologies.yaml').technologies;
 
 /**
  * @class
@@ -9,17 +10,27 @@ const data = require('../../../../data/projects.yaml');
  */
 class Root extends Component {
     render() {
-        let projects = [];
-
-        for (let id in data.projects) {
-            projects.push(<div key={id}>{data.projects[id].name}</div>);
-        }
-
         return (
             <div>
-                <div>Hi!</div>
+                <h1>Projects</h1>
 
-                {projects}
+                {Object.keys(PROJECTS).map((id) => {
+                    const project = PROJECTS[id];
+
+                    return (
+                        <div key={id}>
+                            <h3>{project.name}</h3>
+
+                            <ul>
+                                {project.tech.map((techID) => {
+                                    return (
+                                        <li key={techID}>{TECHS[techID].name}</li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    );
+                })}
             </div>
         );
     }
