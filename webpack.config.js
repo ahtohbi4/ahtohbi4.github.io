@@ -73,6 +73,10 @@ config.module = {
             include: [
                 path.join(__dirname, 'app/')
             ]
+        },
+        {
+            test: /\.yaml$/,
+            loader: 'json!yaml'
         }
     ]
 };
