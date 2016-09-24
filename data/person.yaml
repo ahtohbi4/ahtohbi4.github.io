@@ -1,0 +1,21 @@
+name: Alexandr Antonov
+dateOfBirth: 1985-01-21
+place: Russia, Moscow
+
+contacts:
+    email: alexandr-post@yandex.ru
+    phone: +7****
+
+experience:
+    -
+        dateFrom: 2008-01-01
+        dateTo: 2008-12-01
+        position: HTML-coder
+        descroption: >
+            <p>Text</p>
+    -
+        dateFrom: 2005-01-01
+        dateTo: 2008-01-10
+        position: designer
+        description: >
+            <p>Text</p>

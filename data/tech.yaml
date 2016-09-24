@@ -1,0 +1,75 @@
+0:
+    name: JavaScript
+    description: <p>text</p>
+1:
+    name: HTML
+    description: <p>text</p>
+2:
+    name: CSS
+    description: <p>text</p>
+3:
+    name: React
+    description: <p>text</p>
+4:
+    name: Redux
+    description: <p>text</p>
+5:
+    name: Jasmine
+    description: <p>text</p>
+6:
+    name: Mocha
+    description: <p>text</p>
+7:
+    name: BDD
+    description: <p>text</p>
+8:
+    name: TDD
+    description: <p>text</p>
+9:
+    name: Node.js
+    description: <p>text</p>
+10:
+    name: jQuery
+    description: <p>text</p>
+11:
+    name: Git
+    description: <p>text</p>
+12:
+    name: PostCSS
+    description: <p>text</p>
+13:
+    name: BEM
+    description: <p>text</p>
+14:
+    name: Webpack
+    description: <p>text</p>
+15:
+    name: Gulp
+    description: <p>text</p>
+16:
+    name: Normalize.css
+    description: <p>text</p>
+17:
+    name: GitHub
+    description: <p>text</p>
+18:
+    name: Travis CI
+    description: <p>text</p>
+19:
+    name: bitHound
+    description: <p>text</p>
+20:
+    name: ES6
+    description: <p>text</p>
+21:
+    name: Babel
+    description: <p>text</p>
+22:
+    name: RequireJS
+    description: <p>text</p>
+23:
+    name: AppVeyor
+    description: <p>text</p>
+24:
+    name: npm
+    description: <p>text</p>

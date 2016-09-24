@@ -1,17 +1,44 @@
-projects:
-    0:
-        name: Tic-tac-toe
-        source: http://ya.ru
-        description: <p>Game</p>
-        tech:
-            - 20
-            - 3
-            - 4
-    1:
-        name: Poker
-        source: http://ya.ru
-        description: <p>Game</p>
-        tech:
-            - 20
-            - 3
-            - 4
+0:
+    name: ahtohbi4.github.io
+    source: http://ahtohbi4.github.io
+    description: >
+        <p>Text</p>
+        <p>Multi lines and <em>Styled</em></p>
+    tech:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 9
+        - 11
+        - 12
+        - 13
+        - 14
+        - 16
+        - 17
+        - 20
+        - 21
+        - 24
+1:
+    name: Tic-tac-toe
+    source: http://ya.ru
+    description: <p>Game</p>
+    tech:
+        - 20
+        - 3
+        - 4
+2:
+    name: Poker
+    source: http://ya.ru
+    description: <p>Game</p>
+    tech:
+        - 20
+        - 3
+        - 4
+3:
+    name: postcss-bgimage
+    source: '#'
+    description: <p>Text</p>
+    tech:
+        - 9
+        - 24
