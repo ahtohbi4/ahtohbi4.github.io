@@ -1,3 +1,10 @@
+##
+ # Data of Technologies.
+ #
+ # @property {String} name
+ # @property {String} [description] - Multiline description. May contain an HTML-tags.
+ ##
+
 0:
     name: JavaScript
     description: <p>text</p>
@@ -72,4 +79,7 @@
     description: <p>text</p>
 24:
     name: npm
+    description: <p>text</p>
+25:
+    name: react-router
     description: <p>text</p>

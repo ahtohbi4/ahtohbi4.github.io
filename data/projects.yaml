@@ -1,3 +1,12 @@
+##
+ # Data of Projects.
+ #
+ # @property {String} name
+ # @property {String} [source] - Link to sources.
+ # @property {String} [description] - Multiline description. May contain an HTML-tags.
+ # @property {Array} [tech] - IDs of technologies from tech.yaml.
+ ##
+
 0:
     name: ahtohbi4.github.io
     source: http://ahtohbi4.github.io
@@ -19,6 +28,7 @@
         - 20
         - 21
         - 24
+        - 25
 1:
     name: Tic-tac-toe
     source: http://ya.ru

@@ -1,3 +1,21 @@
+##
+ # Data of the Person.
+ #
+ # @property {String} name
+ # @property {Date} dateOfBirth
+ # @property {String} place
+ #
+ # @property {Objects} contacts
+ # @property {String} contacts.email
+ # @property {String} contacts.phone
+ #
+ # @property {Array.<Objects>} experience
+ # @property {Date} dateFrom
+ # @property {Date} dateTo
+ # @property {String} position
+ # @property {String} descroption
+ ##
+
 name: Alexandr Antonov
 dateOfBirth: 1985-01-21
 place: Russia, Moscow
