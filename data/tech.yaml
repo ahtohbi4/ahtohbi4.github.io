@@ -38,7 +38,7 @@
     name: PostCSS
     description: <p>text</p>
 13:
-    name: BEM
+    name: BEM methodology
     description: <p>text</p>
 14:
     name: Webpack
