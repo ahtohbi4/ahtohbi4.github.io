@@ -8,11 +8,10 @@
  ##
 
 0:
-    name: ahtohbi4.github.io
-    source: http://ahtohbi4.github.io
+    name: _this
+    source: https://github.com/ahtohbi4/ahtohbi4.github.io
     description: >
-        <p>Text</p>
-        <p>Multi lines and <em>Styled</em></p>
+        <p>This site-presentation.</p>
     tech:
         - 0
         - 1
