@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
-import {render} from 'react-dom';
+import React from 'react';
 import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 
-import Layout from '../blocks/layout/layout.jsx';
+import Layout from './views/blocks/layout/layout.jsx';
 
-import Experience from './experience/experience.jsx';
-import Main from './main.jsx';
-import PageNotFound from './page-not-found/page-not-found.jsx';
-import Projects from './projects/projects.jsx';
+import Experience from './views/pages/experience/experience.jsx';
+import Main from './views/pages/main.jsx';
+import Projects from './views/pages/projects/projects.jsx';
 
-render(
+import PageNotFound from './views/pages/page-not-found/page-not-found.jsx';
+
+export default (
     <Router history={hashHistory}>
         <Route path="/">
             <Route component={Layout}>
@@ -21,6 +21,5 @@ render(
                 <Route path="*" component={PageNotFound}/>
             </Route>
         </Route>
-    </Router>,
-    document.getElementById('root')
+    </Router>
 );
