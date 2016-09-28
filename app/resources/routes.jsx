@@ -1,3 +1,6 @@
+/**
+ * The main routing for the app.
+ */
 import React from 'react';
 import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 
