@@ -38,8 +38,7 @@ config.watch = __DEV__;
 config.entry = (() => {
     let result = {
         'index.html': './app/resources/views/layout.html',
-        'build/script.js': './app/app.jsx',
-        'build/style.css': './app/resources/views/pages/index.css'
+        'build/script.js': './app/app.jsx'
     };
 
     if (__DEV__) {
