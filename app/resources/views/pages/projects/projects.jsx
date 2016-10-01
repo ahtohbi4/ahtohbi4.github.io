@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import PROJECTS from '../../../../../data/projects.yaml';
 import TECH from '../../../../../data/tech.yaml';
 
+import TagsGroup from '../../blocks/tags-group/tags-group.jsx';
+import Tag from '../../blocks/tag/tag.jsx';
+
 /**
  * @class
  * @extends Component
@@ -22,13 +25,13 @@ export default class Projects extends Component {
 
                             <div dangerouslySetInnerHTML={{__html: project.description}}/>
 
-                            <ul>
+                            <TagsGroup>
                                 {project.tech.map((techID) => {
                                     return (
-                                        <li key={techID}>{TECH[techID].name}</li>
+                                        <Tag key={techID} tagName="li">{TECH[techID].name}</Tag>
                                     );
                                 })}
-                            </ul>
+                            </TagsGroup>
                         </div>
                     );
                 })}
