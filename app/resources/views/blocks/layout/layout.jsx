@@ -23,7 +23,7 @@ export default class Layout extends Component {
                             <Link to="/experience/">Experience</Link>
                         </li>
                         <li>
-                            <Link to="/tech/">Technologies</Link>
+                            <Link to="/skills/">Skills</Link>
                         </li>
                     </ul>
                 </nav>
