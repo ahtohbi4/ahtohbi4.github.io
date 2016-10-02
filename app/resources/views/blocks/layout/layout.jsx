@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 
+import Menu from '../menu/menu.jsx';
+
 /**
  * @class
  * @extends Component
@@ -11,22 +13,7 @@ export default class Layout extends Component {
             <div>
                 <div>Alexandr Antonov</div>
 
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/projects/">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/experience/">Experience</Link>
-                        </li>
-                        <li>
-                            <Link to="/skills/">Skills</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <Menu/>
 
                 <div>{this.props.children}</div>
             </div>
