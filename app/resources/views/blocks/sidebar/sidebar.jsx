@@ -12,9 +12,11 @@ export default class Layout extends Component {
     render() {
         return (
             <div className="sidebar">
-                <div>Alexandr Antonov</div>
+                <div className="sidebar__content">
+                    <div>Alexandr Antonov</div>
 
-                <Menu/>
+                    <Menu/>
+                </div>
             </div>
         );
     }

@@ -11,18 +11,18 @@ export default class Menu extends Component {
     render() {
         return (
             <nav className="menu">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
+                <ul className="menu__items">
+                    <li className="menu__item">
+                        <Link className="menu__item-link" to="/">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/experience/">Experience</Link>
+                    <li className="menu__item">
+                        <Link className="menu__item-link" to="/experience/">Experience</Link>
                     </li>
-                    <li>
-                        <Link to="/skills/">Skills</Link>
+                    <li className="menu__item">
+                        <Link className="menu__item-link" to="/skills/">Skills</Link>
                     </li>
-                    <li>
-                        <Link to="/projects/">Projects</Link>
+                    <li className="menu__item">
+                        <Link className="menu__item-link" to="/projects/">Projects</Link>
                     </li>
                 </ul>
             </nav>

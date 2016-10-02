@@ -1,1 +1,17 @@
 .menu {}
+
+.menu__items {
+    margin: 0 0 27px;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.menu__item {
+    display: block;
+    margin: 0 0 9px;
+}
+
+.menu__item-link {
+    color: #fff;
+}
