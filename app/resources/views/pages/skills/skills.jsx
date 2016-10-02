@@ -24,7 +24,6 @@ export default class Skills extends Component {
                         );
                     })}
                 </TagsGroup>
-
             </div>
         );
     }
