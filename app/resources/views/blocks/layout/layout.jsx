@@ -3,6 +3,8 @@ import {Link} from 'react-router';
 
 import Menu from '../menu/menu.jsx';
 
+import css from './layout.css';
+
 /**
  * @class
  * @extends Component
