@@ -1,2 +1,8 @@
 @import url(../page/page.css);
 @import url(../text/text.css);
+@import url(../link/link.css);
+
+.layout {
+    display: flex;
+    flex: 1 0 auto;
+}

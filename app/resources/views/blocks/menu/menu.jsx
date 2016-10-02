@@ -19,10 +19,10 @@ export default class Menu extends Component {
                         <Link to="/experience/">Experience</Link>
                     </li>
                     <li>
-                        <Link to="/projects/">Projects</Link>
+                        <Link to="/skills/">Skills</Link>
                     </li>
                     <li>
-                        <Link to="/skills/">Skills</Link>
+                        <Link to="/projects/">Projects</Link>
                     </li>
                 </ul>
             </nav>

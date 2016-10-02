@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 
-import Menu from '../menu/menu.jsx';
+import Sidebar from '../sidebar/sidebar.jsx';
 
 import css from './layout.css';
 
@@ -12,10 +12,8 @@ import css from './layout.css';
 export default class Layout extends Component {
     render() {
         return (
-            <div>
-                <div>Alexandr Antonov</div>
-
-                <Menu/>
+            <div className="layout">
+                <Sidebar/>
 
                 <div>{this.props.children}</div>
             </div>
