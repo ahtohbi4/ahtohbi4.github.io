@@ -47,7 +47,7 @@ config.entry = (() => {
     }
 
     return result;
-}());
+})();
 
 /**
  * Output
@@ -90,7 +90,7 @@ config.module = {
                 result.push('babel');
 
                 return result;
-            }()),
+            })(),
             include: [
                 path.join(__dirname, 'app/')
             ]
@@ -132,7 +132,7 @@ config.plugins = (() => {
     }
 
     return result;
-}());
+})();
 
 /**
  * PostCSS
@@ -171,7 +171,7 @@ config.postcss = (() => {
     }
 
     return result;
-}());
+})();
 
 /**
  * Resolve
