@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Immutable from 'immutable';
+
 import TECH from '../../../../../data/tech.yaml';
 
 import TagsGroup from '../../blocks/tags-group/tags-group.jsx';
@@ -11,14 +13,17 @@ import Tag from '../../blocks/tag/tag.jsx';
  */
 export default class Skills extends Component {
     render() {
+        const techs = Immutable.OrderedMap(TECH);
+
         return (
             <div>
                 <h1>My skills</h1>
 
                 <TagsGroup>
-                    {Object.keys(TECH).map((id) => {
-                        const tech = TECH[id];
-
+                    {techs.entrySeq().map(([
+                        id,
+                        tech
+                    ]) => {
                         return (
                             <Tag key={id} tagName="li">{tech.name}</Tag>
                         );

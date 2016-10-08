@@ -83,3 +83,7 @@
 25:
     name: react-router
     description: <p>text</p>
+26:
+    name: immutable.js
+    description: >
+        <p>Text</p>

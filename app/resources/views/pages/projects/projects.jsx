@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Immutable from 'immutable';
+
 import PROJECTS from '../../../../../data/projects.yaml';
 import TECH from '../../../../../data/tech.yaml';
 
@@ -12,18 +14,23 @@ import Tag from '../../blocks/tag/tag.jsx';
  */
 export default class Projects extends Component {
     render() {
+        const projects = Immutable.OrderedMap(PROJECTS);
+
         return (
             <div>
                 <h1>Projects</h1>
 
-                {Object.keys(PROJECTS).map((id) => {
-                    const project = PROJECTS[id];
-
+                {projects.entrySeq().map(([
+                    id,
+                    project
+                ]) => {
                     return (
                         <div key={id}>
                             <h3>{project.name}</h3>
 
-                            <div dangerouslySetInnerHTML={{__html: project.description}}/>
+                            <div dangerouslySetInnerHTML={{
+                                __html: project.description
+                            }}/>
 
                             <TagsGroup>
                                 {project.tech.map((techID) => {

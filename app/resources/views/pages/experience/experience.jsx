@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
-import PERSON from '../../../../../data/person.yaml';
+import Immutable from 'immutable';
+
+import EXPERIENCE from '../../../../../data/experience.yaml';
 
 /**
  * @class
@@ -8,11 +10,14 @@ import PERSON from '../../../../../data/person.yaml';
  */
 export default class Experience extends Component {
     render() {
+        const experience = Immutable.List(EXPERIENCE);
+        const experienceReversed = experience.reverse();
+
         return (
             <div>
                 <h1>Experience</h1>
 
-                {PERSON.experience.map((job, i) => {
+                {experienceReversed.map((job, i) => {
                     return (
                         <div key={i}>
                             <h5>{job.position}</h5>
