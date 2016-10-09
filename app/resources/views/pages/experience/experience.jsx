@@ -10,8 +10,7 @@ import EXPERIENCE from '../../../../../data/experience.yaml';
  */
 export default class Experience extends Component {
     render() {
-        const experience = Immutable.List(EXPERIENCE);
-        const experienceReversed = experience.reverse();
+        const experienceReversed = Immutable.List(EXPERIENCE).reverse();
 
         return (
             <div>
