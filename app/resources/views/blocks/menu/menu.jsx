@@ -13,14 +13,17 @@ export default class Menu extends Component {
             <nav className="menu">
                 <ul className="menu__items">
                     <li className="menu__item">
-                        <Link className="menu__item-link" to="/">Home</Link>
+                        <Link className="menu__item-link" to="/">About me</Link>
                     </li>
+
                     <li className="menu__item">
                         <Link className="menu__item-link" to="/experience/">Experience</Link>
                     </li>
+
                     <li className="menu__item">
                         <Link className="menu__item-link" to="/skills/">Skills</Link>
                     </li>
+
                     <li className="menu__item">
                         <Link className="menu__item-link" to="/projects/">Projects</Link>
                     </li>
