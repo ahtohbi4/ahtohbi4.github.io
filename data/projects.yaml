@@ -43,7 +43,6 @@
     description: <p>Game</p>
     tech:
         - 20
-        - 3
         - 4
 3:
     name: postcss-bgimage
