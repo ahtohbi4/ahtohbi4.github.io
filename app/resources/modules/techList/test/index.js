@@ -36,28 +36,35 @@ function getOrderedMap(array) {
     }));
 }
 
-describe('Function', () => {
-    describe('techListByProject()', () => {
-        it('returns tech list used in the project', () => {
+describe('To get', () => {
+    describe('a tech list of a project', () => {
+        it('by using techListByProject()', () => {
             expect(techList.techListByProject(TECH, PROJECTS.get('45')))
                 .to.equal(getOrderedMap([765, 3, 54]));
         });
     });
 
-    describe('techListSortedByUsage()', () => {
-        it('without third parameter returns tech list sorted ASC by usage in projects.', () => {
+    describe('a tech list sorted', () => {
+        it('ASC by usage in projects.', () => {
             expect(techList.techListSortedByUsage(TECH, PROJECTS))
                 .to.equal(getOrderedMap([0, 765, 54, 3]));
         });
 
-        it('with \'ASC\' as the third parameter returns tech list sorted ASC by usage in projects.', () => {
+        it('ASC by usage in projects.', () => {
             expect(techList.techListSortedByUsage(TECH, PROJECTS, 'ASC'))
                 .to.equal(getOrderedMap([0, 765, 54, 3]));
         });
 
-        it('with \'DESC\' as the third parameter returns tech list sorted DESC by usage in projects.', () => {
+        it('DESC by usage in projects.', () => {
             expect(techList.techListSortedByUsage(TECH, PROJECTS, 'DESC'))
                 .to.equal(getOrderedMap([3, 54, 765, 0]));
+        });
+    });
+
+    describe('a tech list of a project sorted', () => {
+        it('DESC by usage in projects.', () => {
+            expect(techList.techListSortedByUsage(techList.techListByProject(TECH, PROJECTS.get('3')), PROJECTS, 'DESC'))
+                .to.equal(getOrderedMap([3, 54, 0]));
         });
     });
 });
