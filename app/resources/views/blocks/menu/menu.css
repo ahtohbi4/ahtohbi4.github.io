@@ -13,5 +13,9 @@
 }
 
 .menu__item-link {
+    position: relative;
     color: #fff;
+}
+.menu__item-link_active {
+    right: -10px;
 }

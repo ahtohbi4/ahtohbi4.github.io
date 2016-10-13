@@ -13,22 +13,37 @@ export default class Menu extends Component {
             <nav className="menu">
                 <ul className="menu__items">
                     <li className="menu__item">
-                        <Link className="menu__item-link" to="/">About me</Link>
+                        <MenuLink to="/">About me</MenuLink>
                     </li>
 
                     <li className="menu__item">
-                        <Link className="menu__item-link" to="/experience/">Experience</Link>
+                        <MenuLink to="/experience/">Experience</MenuLink>
                     </li>
 
                     <li className="menu__item">
-                        <Link className="menu__item-link" to="/skills/">Skills</Link>
+                        <MenuLink to="/skills/">Skills</MenuLink>
                     </li>
 
                     <li className="menu__item">
-                        <Link className="menu__item-link" to="/projects/">Projects</Link>
+                        <MenuLink to="/projects/">Projects</MenuLink>
                     </li>
                 </ul>
             </nav>
+        );
+    }
+}
+
+/**
+ * @class
+ * @extends Component
+ */
+class MenuLink extends Component {
+    render() {
+        return (
+            <Link
+                activeClassName="menu__item-link_active"
+                className="menu__item-link"
+                {...this.props}/>
         );
     }
 }
