@@ -1,6 +1,7 @@
 .sidebar {
-    background: #234;
-    box-shadow: inset -1px 0 rgba(0, 0, 0, .05), inset -2px 0 rgba(0, 0, 0, .05), inset -4px 0 rgba(0, 0, 0, .05), inset -6px 0 rgba(0, 0, 0, .05), inset -9px 0 rgba(0, 0, 0, .05);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), linear-gradient(23deg, #2f6692, #292a52);
+    background-color: #273e64;
+    box-shadow: inset -1px 0 rgba(0, 0, 0, .05), inset -2px 0 rgba(0, 0, 0, .05), inset -3px 0 rgba(0, 0, 0, .05), inset -4px 0 rgba(0, 0, 0, .05), inset -5px 0 rgba(0, 0, 0, .05);
 }
 
 .sidebar__content {
