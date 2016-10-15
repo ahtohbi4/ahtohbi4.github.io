@@ -107,3 +107,9 @@
     source: https://facebook.github.io/jsx/
 33:
     name: Linux (Ubuntu)
+34:
+    name: Lodash
+    source: https://lodash.com/
+35:
+    name: Python
+    source: https://www.python.org/
