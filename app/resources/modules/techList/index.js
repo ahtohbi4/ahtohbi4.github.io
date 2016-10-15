@@ -26,9 +26,17 @@ export function techListByProject(tech, project) {
  * @return {Map}
  */
 export function techListSortedByUsage(tech, projects, direction) {
+    if (!tech || !projects) {
+        return Immutable.OrderedMap({});
+    }
+
     const techSorted = tech.sortBy((t, id) => {
         return projects.count((project) => {
-            return project.get('tech').includes(Number(id));
+            if (project.get('tech')) {
+                return project.get('tech').includes(Number(id));
+            } else {
+                return false;
+            }
         });
     });
 

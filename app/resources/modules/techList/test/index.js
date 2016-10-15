@@ -49,9 +49,7 @@ describe('To get', () => {
         });
 
         it('by using techListByProject() with projects list containing no tech', () => {
-            const projects = PROJECTS.set({
-                99: {}
-            });
+            const projects = PROJECTS.set(99, Immutable.Map({}));
 
             expect(techList.techListByProject(TECH, projects.get('99')))
                 .to.equal(getOrderedMap([]));
@@ -62,6 +60,25 @@ describe('To get', () => {
         it('by using techListByProject()', () => {
             expect(techList.techListByProject(TECH, PROJECTS.get('45')))
                 .to.equal(getOrderedMap([765, 3, 54]));
+        });
+    });
+
+    describe('an empty tech list', () => {
+        it('by using techListSortedByUsage() with empty tech list', () => {
+            expect(techList.techListSortedByUsage(Immutable.fromJS(undefined), PROJECTS))
+                .to.equal(getOrderedMap([]));
+        });
+
+        it('by using techListSortedByUsage() with empty projects list', () => {
+            expect(techList.techListSortedByUsage(TECH, Immutable.fromJS(undefined)))
+                .to.equal(getOrderedMap([]));
+        });
+
+        it('by using techListSortedByUsage() with projects list containing no tech', () => {
+            const projects = PROJECTS.set(99, Immutable.Map({}));
+
+            expect(techList.techListSortedByUsage(TECH, projects))
+                .to.equal(getOrderedMap([0, 765, 54, 3]));
         });
     });
 
