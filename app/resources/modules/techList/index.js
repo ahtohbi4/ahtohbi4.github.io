@@ -8,6 +8,10 @@ import Immutable from 'immutable';
  * @return {Map}
  */
 export function techListByProject(tech, project) {
+    if (!tech || !project) {
+        return Immutable.OrderedMap({});
+    }
+
     return Immutable.OrderedMap(project.get('tech').map((t) => {
         return [String(t), tech.get(String(t))];
     }));

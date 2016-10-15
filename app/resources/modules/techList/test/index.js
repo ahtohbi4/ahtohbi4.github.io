@@ -37,6 +37,27 @@ function getOrderedMap(array) {
 }
 
 describe('To get', () => {
+    describe('an empty tech list of a project', () => {
+        it('by using techListByProject() with empty tech list', () => {
+            expect(techList.techListByProject(Immutable.fromJS(undefined), PROJECTS.get('45')))
+                .to.equal(getOrderedMap([]));
+        });
+
+        it('by using techListByProject() with empty projects list', () => {
+            expect(techList.techListByProject(TECH, Immutable.fromJS(undefined)))
+                .to.equal(getOrderedMap([]));
+        });
+
+        it('by using techListByProject() with projects list containing no tech', () => {
+            const projects = PROJECTS.set({
+                99: {}
+            });
+
+            expect(techList.techListByProject(TECH, projects.get('99')))
+                .to.equal(getOrderedMap([]));
+        });
+    });
+
     describe('a tech list of a project', () => {
         it('by using techListByProject()', () => {
             expect(techList.techListByProject(TECH, PROJECTS.get('45')))
