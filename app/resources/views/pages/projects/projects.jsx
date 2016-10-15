@@ -34,16 +34,18 @@ export default class Projects extends Component {
                                 __html: project.get('description')
                             }}/>
 
-                            <TagsGroup>
-                                {techListSortedByUsage(techListByProject(Immutable.fromJS(TECH), project), projects, 'ASC').entrySeq().map(([
-                                    id,
-                                    tech
-                                ]) => { console.log(tech);
-                                    return (
-                                        <Tag key={id} tagName="li">{tech.get('name')}</Tag>
-                                    );
-                                })}
-                            </TagsGroup>
+                            {(project.get('tech') !== undefined) ? (
+                                <TagsGroup>
+                                    {techListSortedByUsage(techListByProject(Immutable.fromJS(TECH), project), projects, 'ASC').entrySeq().map(([
+                                        id,
+                                        tech
+                                    ]) => {
+                                        return (
+                                            <Tag key={id} tagName="li">{tech.get('name')}</Tag>
+                                        );
+                                    })}
+                                </TagsGroup>
+                            ) : null}
                         </div>
                     );
                 })}
