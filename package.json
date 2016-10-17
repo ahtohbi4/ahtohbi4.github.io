@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register app/resources/**/test/",
     "start": "node server.js",
-    "build": "rm -rf build/ && NODE_ENV=production webpack"
+    "build": "bash ./build.sh"
   },
   "repository": {
     "type": "git",
