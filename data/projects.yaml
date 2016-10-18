@@ -33,6 +33,7 @@
         - 26
         - 27
         - 32
+        - 36
 1:
     name: Tic-Tac-Toe
     source: https://github.com/ahtohbi4/tic-tac-toe
