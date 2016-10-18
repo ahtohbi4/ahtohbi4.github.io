@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 
+import DevTools from '../../../../utils/DevTools';
+
 import Sidebar from '../sidebar/sidebar.jsx';
 
 import css from './layout.css';
@@ -16,6 +18,8 @@ export default class Layout extends Component {
                 <Sidebar/>
 
                 <div>{this.props.children}</div>
+
+                {__DEV__ ? <DevTools/> : null}
             </div>
         );
     }

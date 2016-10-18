@@ -15,16 +15,13 @@ import PageNotFound from './views/pages/page-not-found/page-not-found.jsx';
 
 export default (
     <Router history={hashHistory}>
-        <Route path="/">
-            <Route component={Layout}>
-                <IndexRoute component={Main}/>
+        <Route component={Layout}>
+            <Route path="/" component={Main}/>
+            <Route path="experience/" component={Experience}/>
+            <Route path="projects/" component={Projects}/>
+            <Route path="skills/" component={Skills}/>
 
-                <Route path="experience/" component={Experience}/>
-                <Route path="projects/" component={Projects}/>
-                <Route path="skills/" component={Skills}/>
-
-                <Route path="*" component={PageNotFound}/>
-            </Route>
+            <Route path="*" component={PageNotFound}/>
         </Route>
     </Router>
 );

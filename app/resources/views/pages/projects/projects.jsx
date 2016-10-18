@@ -38,7 +38,7 @@ export default class Projects extends Component {
 
                             {(project.get('tech') !== undefined) ? (
                                 <TagsGroup>
-                                    {techListSortedByUsage(techListByProject(Immutable.fromJS(TECH), project), projects, 'ASC').entrySeq().map(([
+                                    {techListSortedByUsage(techListByProject(Immutable.fromJS(TECH), project), projects, 'DESC').entrySeq().map(([
                                         id,
                                         tech
                                     ]) => {
