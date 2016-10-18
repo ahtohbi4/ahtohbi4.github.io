@@ -20,7 +20,9 @@ export default class Projects extends Component {
 
         return (
             <div>
-                <h1>Projects</h1>
+                <h1>Projects ({projects.count()})</h1>
+
+                <p>Some of my latest projects were collected here. Most of them are open source or were created in trying to understand some kind of technology.</p>
 
                 {projects.entrySeq().map(([
                     id,
