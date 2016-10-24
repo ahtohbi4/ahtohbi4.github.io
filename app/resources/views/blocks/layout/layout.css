@@ -6,3 +6,14 @@
     display: flex;
     flex: 1 0 auto;
 }
+
+/* @elem content */
+.layout__content {
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+@media (min-width: 1280px) {
+    .layout__content {
+        padding: 27px 30px;
+    }
+}

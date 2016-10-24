@@ -1,11 +1,30 @@
 .sidebar {
+    flex-shrink: 0;
+    width: 20px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), linear-gradient(23deg, #2f6692, #292a52);
     background-color: #273e64;
     box-shadow: inset -1px 0 rgba(0, 0, 0, .05), inset -2px 0 rgba(0, 0, 0, .05), inset -3px 0 rgba(0, 0, 0, .05), inset -4px 0 rgba(0, 0, 0, .05), inset -5px 0 rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+@media (min-width: 720px) {
+    .sidebar {
+        width: 250px;
+    }
+}
+@media (min-width: 1280px) {
+    .sidebar {
+        width: 400px;
+    }
 }
 
+/* @elem content */
 .sidebar__content {
-    width: 300px;
     box-sizing: border-box;
     padding: 27px 30px;
+    opacity: 0;
+}
+@media (min-width: 720px) {
+    .sidebar__content {
+        opacity: 1;
+    }
 }

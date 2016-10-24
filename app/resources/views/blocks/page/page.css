@@ -12,6 +12,7 @@ html {
     flex: 1 0 auto;
     margin: 0;
     padding: 0;
+    min-width: 320px;
 }
 
 .page__app {

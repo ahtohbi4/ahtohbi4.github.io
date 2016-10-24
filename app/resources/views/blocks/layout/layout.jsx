@@ -17,10 +17,22 @@ export default class Layout extends Component {
             <div className="layout">
                 <Sidebar/>
 
-                <div>{this.props.children}</div>
+                <LayoutContent>{this.props.children}</LayoutContent>
 
                 {__DEV__ ? <DevTools/> : null}
             </div>
+        );
+    }
+}
+
+/**
+ * @class
+ * @extends Component
+ */
+class LayoutContent extends Component {
+    render() {
+        return (
+            <div className="layout__content">{this.props.children}</div>
         );
     }
 }
