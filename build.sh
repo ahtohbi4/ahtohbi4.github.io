@@ -4,11 +4,11 @@ echo "Start...";
 STARTSCRIPTTIME=$(date +%s);
 
 ##
- # Install npm dependencies.
+ # Install yarn dependencies.
  #
-echo "Install npm dependencies.";
+echo "Install dependencies.";
 STARTTIME=$(date +%s);
-rm -rf node_modules && npm install;
+rm -rf node_modules && yarn install;
 ENDTIME=$(date +%s);
 echo "Done at $(($ENDTIME - $STARTTIME))s.";
 
