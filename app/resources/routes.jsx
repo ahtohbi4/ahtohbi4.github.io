@@ -2,7 +2,11 @@
  * The main routing for the app.
  */
 import React from 'react';
-import {Router, Route, hashHistory, IndexRoute} from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
 import Layout from './views/blocks/layout/layout.jsx';
 
@@ -14,14 +18,16 @@ import Skills from './views/pages/skills/skills.jsx';
 import PageNotFound from './views/pages/page-not-found/page-not-found.jsx';
 
 export default (
-    <Router history={hashHistory}>
-        <Route component={Layout}>
-            <Route path="/" component={Main}/>
-            <Route path="experience/" component={Experience}/>
-            <Route path="projects/" component={Projects}/>
-            <Route path="skills/" component={Skills}/>
+  <Router>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/experience/" component={Experience} />
+        <Route path="/projects/" component={Projects} />
+        <Route path="/skills/" component={Skills} />
 
-            <Route path="*" component={PageNotFound}/>
-        </Route>
-    </Router>
+        <Route component={PageNotFound} />
+      </Switch>
+    </Layout>
+  </Router>
 );
