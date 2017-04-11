@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Menu from '../menu/menu.jsx';
+import Menu from '../menu/menu.js';
 
 import css from './sidebar.css';
 

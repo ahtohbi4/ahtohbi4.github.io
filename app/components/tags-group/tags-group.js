@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Tag from '../tag/tag.jsx';
+import Tag from '../tag/tag';
 
 import css from './tags-group.css';
 

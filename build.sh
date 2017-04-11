@@ -47,7 +47,7 @@ echo "Done at $(($ENDTIME - $STARTTIME))s.";
  #
 echo "Start build process...";
 STARTTIME=$(date +%s);
-NODE_ENV=production webpack;
+NODE_ENV=production node_modules/.bin/webpack --config internals/webpack.config.prod.js --color;
 ENDTIME=$(date +%s);
 echo "Done at $(($ENDTIME - $STARTTIME))s.";
 

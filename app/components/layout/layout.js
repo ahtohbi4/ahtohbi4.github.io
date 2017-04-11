@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Sidebar from '../sidebar/sidebar.jsx';
+import Sidebar from '../sidebar/sidebar.js';
 
 import css from './layout.css';
 

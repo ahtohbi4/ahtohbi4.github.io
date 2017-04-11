@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Immutable from 'immutable';
 
-import EXPERIENCE from '../../../../../data/experience.yaml';
+import EXPERIENCE from '../../../data/experience.yaml';
 
 /**
  * @class

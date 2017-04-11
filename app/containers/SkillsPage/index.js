@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 
 import Immutable from 'immutable';
 
-import PROJECTS from '../../../../../data/projects.yaml';
-import TECH from '../../../../../data/tech.yaml';
+import PROJECTS from '../../../data/projects.yaml';
+import TECH from '../../../data/tech.yaml';
 
-import {techListSortedByUsage} from '../../../modules/techList';
+import {techListSortedByUsage} from '../../../utils/techList';
 
-import TagsGroup from '../../blocks/tags-group/tags-group.jsx';
-import Tag from '../../blocks/tag/tag.jsx';
+import TagsGroup from '../../components/tags-group/tags-group.js';
+import Tag from '../../components/tag/tag.js';
 
 /**
  * @class

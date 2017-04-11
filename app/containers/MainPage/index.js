@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 
 import Immutable from 'immutable';
 
-import PERSON from '../../../../data/person.yaml';
+import PERSON from '../../../data/person.yaml';
 
-import Icon from '../blocks/icon/icon.jsx';
+import Icon from '../../components/icon/icon.js';
 
-import './main.css';
+import './styles.css';
 
 /**
  * @class
