@@ -63,10 +63,7 @@ module.exports = (options) => ({
                         },
                     },
                 ]),
-                include: [
-                    path.join(baseDir, 'app/'),
-                    path.join(baseDir, 'node_modules/matrix-slicer/'),
-                ],
+                include: path.join(baseDir, 'app/'),
             },
 
             {
