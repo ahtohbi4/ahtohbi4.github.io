@@ -63,7 +63,10 @@ module.exports = (options) => ({
                         },
                     },
                 ]),
-                include: path.join(baseDir, 'app/'),
+                include: [
+                    path.join(baseDir, 'app/'),
+                    path.join(baseDir, 'utils/'),
+                ],
             },
 
             {
