@@ -6,6 +6,10 @@ html {
     min-height: 100%;
 }
 
+a {
+    color: #f30;
+}
+
 .page {
     display: flex;
     flex-direction: column;

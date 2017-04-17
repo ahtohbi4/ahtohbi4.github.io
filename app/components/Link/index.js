@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default class Link extends Component {
-  render() {
-    const { children, ...props } = this.props;
+export default function Link(props) {
+    const { children, ...rest } = props;
 
     return (
-      <NavLink {...props}>
-        {children}
+      <NavLink {...rest}>
+          {children}
       </NavLink>
     );
-  }
 }

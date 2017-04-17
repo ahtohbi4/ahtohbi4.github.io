@@ -5,10 +5,13 @@ import Immutable from 'immutable';
 import PROJECTS from '../../../data/projects.yaml';
 import TECH from '../../../data/tech.yaml';
 
-import {techListByProject, techListSortedByUsage} from '../../../utils/techList';
+import {
+    techListByProject,
+    techListSortedByUsage,
+} from '../../../utils/techList';
 
-import TagsGroup from '../../components/tags-group/tags-group.js';
-import Tag from '../../components/tag/tag.js';
+import TagsGroup from '../../components/TagsGroup';
+import Tag from '../../components/Tag';
 
 /**
  * @class

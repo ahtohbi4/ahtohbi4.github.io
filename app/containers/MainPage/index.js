@@ -4,7 +4,7 @@ import Immutable from 'immutable';
 
 import PERSON from '../../../data/person.yaml';
 
-import Icon from '../../components/icon/icon.js';
+import Icon from '../../components/Icon';
 
 import './styles.css';
 

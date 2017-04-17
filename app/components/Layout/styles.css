@@ -1,6 +1,5 @@
-@import url(../page/page.css);
-@import url(../text/text.css);
-@import url(../link/link.css);
+@import url(../Page/styles.css);
+@import url(../Text/styles.css);
 
 .layout {
     display: flex;

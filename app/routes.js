@@ -8,7 +8,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import Layout from './components/layout/layout.js';
+import App from './components/App';
 
 import ExperiencePage from './containers/ExperiencePage';
 import MainPage from './containers/MainPage';
@@ -19,7 +19,7 @@ import NotFoundPage from './containers/NotFoundPage';
 
 export default (
   <Router>
-    <Layout>
+    <App>
       <Switch>
         <Route exact path="/" component={MainPage} />
 
@@ -29,6 +29,6 @@ export default (
 
         <Route component={NotFoundPage} />
       </Switch>
-    </Layout>
+    </App>
   </Router>
 );
