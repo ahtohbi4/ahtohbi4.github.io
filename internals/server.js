@@ -10,7 +10,9 @@ const {
     HOST,
     PORT,
 } = require('./config');
-const webpackConfig = require(`./webpack.config.${isDev ? 'dev' : 'prod'}`);
+const webpackConfig = isDev ?
+    require('./webpack.config.dev') :
+    require('./webpack.config.prod');
 
 new WebpackDevServer(webpack(webpackConfig), {
     host: HOST,
@@ -24,8 +26,8 @@ new WebpackDevServer(webpack(webpackConfig), {
     },
 }).listen(PORT, HOST, (error) => {
     if (error) {
-        console.log(error);
+        console.log(error); // eslint-disable-line no-console
     }
 
-    console.log(`Listening at ${HOST}:${PORT}.`);
+    console.log(`Listening at ${HOST}:${PORT}.`); // eslint-disable-line no-console
 });

@@ -1,27 +1,28 @@
 import chai from 'chai';
 import chaiImmutable from 'chai-immutable';
-const expect = chai.expect;
-chai.use(chaiImmutable);
+import Immutable from 'immutable';
 
 import * as techList from '../';
 
-import Immutable from 'immutable';
+const expect = chai.expect;
+chai.use(chaiImmutable);
+
 const PROJECTS = Immutable.fromJS({
     3: {
-        tech: [54, 0, 3]
+        tech: [54, 0, 3],
     },
     45: {
-        tech: [765, 3, 54]
+        tech: [765, 3, 54],
     },
     7: {
-        tech: [3]
-    }
+        tech: [3],
+    },
 });
 const TECH = Immutable.fromJS({
     0: {},
     765: {},
     54: {},
-    3: {}
+    3: {},
 });
 
 /**
@@ -31,9 +32,10 @@ const TECH = Immutable.fromJS({
  * @return {OrderedMap}
  */
 function getOrderedMap(array) {
-    return Immutable.OrderedMap(array.map((item) => {
-        return [String(item), Immutable.Map({})];
-    }));
+    return Immutable.OrderedMap(array.map((item) => [
+        String(item),
+        Immutable.Map({}),
+    ]));
 }
 
 describe('To get', () => {
@@ -101,7 +103,12 @@ describe('To get', () => {
 
     describe('a tech list of a project sorted', () => {
         it('DESC by usage in projects.', () => {
-            expect(techList.techListSortedByUsage(techList.techListByProject(TECH, PROJECTS.get('3')), PROJECTS, 'DESC'))
+            expect(techList.techListSortedByUsage(techList.techListByProject(
+                TECH,
+                PROJECTS.get('3')),
+                PROJECTS,
+                'DESC',
+            ))
                 .to.equal(getOrderedMap([3, 54, 0]));
         });
     });

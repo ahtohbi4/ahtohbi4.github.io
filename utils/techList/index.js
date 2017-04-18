@@ -12,10 +12,11 @@ export function techListByProject(tech, project) {
         return Immutable.OrderedMap({});
     }
 
-    return Immutable.OrderedMap(project.get('tech').map((t) => {
-        return [String(t), tech.get(String(t))];
-    }));
-};
+    return Immutable.OrderedMap(project.get('tech').map((t) => [
+        String(t),
+        tech.get(String(t)),
+    ]));
+}
 
 /**
  * Sort a list of tech by usage in projects.
@@ -30,15 +31,13 @@ export function techListSortedByUsage(tech, projects, direction) {
         return Immutable.OrderedMap({});
     }
 
-    const techSorted = tech.sortBy((t, id) => {
-        return projects.count((project) => {
-            if (project.get('tech')) {
-                return project.get('tech').includes(Number(id));
-            } else {
-                return false;
-            }
-        });
-    });
+    const techSorted = tech.sortBy((t, id) => projects.count((project) => {
+        if (!project.get('tech')) {
+            return false;
+        }
+
+        return project.get('tech').includes(Number(id));
+    }));
 
     switch (direction) {
         case 'DESC':
@@ -47,4 +46,4 @@ export function techListSortedByUsage(tech, projects, direction) {
         default:
             return techSorted;
     }
-};
+}
