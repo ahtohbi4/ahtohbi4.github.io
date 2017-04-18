@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register utils/**/test/",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "node_modules/.bin/eslint app/ internals/ urils/",
+    "lint:js": "node_modules/.bin/eslint app/ internals/ utils/",
     "lint:css": "node_modules/.bin/stylelint app/**/*.css",
     "lint:staged": "lint-staged",
     "start": "node internals/server",
