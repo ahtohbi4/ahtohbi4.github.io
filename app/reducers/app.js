@@ -5,7 +5,7 @@
  * @member {string} pageTitle
  */
 const INITIAL_STATE = {
-    pageTitle: 'Alexandr Antonov - Front-end developer.'
+    pageTitle: 'Alexandr Antonov - Front-end developer.',
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -18,10 +18,10 @@ export default function (state = INITIAL_STATE, action) {
 
             return {
                 ...state,
-                pageTitle:  action.pageTitle
+                pageTitle: action.pageTitle,
             };
 
         default:
             return state;
     }
-};
+}

@@ -3,9 +3,9 @@
  */
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
+    BrowserRouter as Router,
+    Route,
+    Switch,
 } from 'react-router-dom';
 
 import App from './components/App';
@@ -18,17 +18,17 @@ import SkillsPage from './containers/SkillsPage';
 import NotFoundPage from './containers/NotFoundPage';
 
 export default (
-  <Router>
-    <App>
-      <Switch>
-        <Route exact path="/" component={MainPage} />
+    <Router>
+        <App>
+            <Switch>
+                <Route exact path="/" component={MainPage} />
 
-        <Route path="/experience/" component={ExperiencePage} />
-        <Route path="/projects/" component={ProjectsPage} />
-        <Route path="/skills/" component={SkillsPage} />
+                <Route path="/experience/" component={ExperiencePage} />
+                <Route path="/projects/" component={ProjectsPage} />
+                <Route path="/skills/" component={SkillsPage} />
 
-        <Route component={NotFoundPage} />
-      </Switch>
-    </App>
-  </Router>
+                <Route component={NotFoundPage} />
+            </Switch>
+        </App>
+    </Router>
 );
