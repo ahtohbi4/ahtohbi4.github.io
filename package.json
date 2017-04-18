@@ -14,9 +14,6 @@
     "build": "bash ./build.sh"
   },
   "repository": "https://github.com/ahtohbi4/ahtohbi4.github.io",
-  "keywords": [
-    ""
-  ],
   "author": "Alexandr Antonov",
   "license": "BSD-2-Clause",
   "bugs": {

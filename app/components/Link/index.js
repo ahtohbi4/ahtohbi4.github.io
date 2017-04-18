@@ -5,8 +5,8 @@ export default function Link(props) {
     const { children, ...rest } = props;
 
     return (
-      <NavLink {...rest}>
-          {children}
-      </NavLink>
+        <NavLink {...rest}>
+            {children}
+        </NavLink>
     );
 }
