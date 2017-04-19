@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import Immutable from 'immutable';
 
 import PROJECTS from '../../../data/projects.yaml';
@@ -12,27 +11,25 @@ import {
 import TagsGroup from '../../components/TagsGroup';
 import Tag from '../../components/Tag';
 
-/**
- * @class
- * @extends Component
- */
-export default class Skills extends Component {
-    render() {
-        return (
-            <div>
-                <h1>My skills</h1>
+export default function Skills() {
+    return (
+        <div>
+            <h1>My skills</h1>
 
-                <TagsGroup>
-                    {techListSortedByUsage(Immutable.fromJS(TECH), Immutable.fromJS(PROJECTS), 'DESC').entrySeq().map(([
+            <TagsGroup>
+                {techListSortedByUsage(
+                    Immutable.fromJS(TECH),
+                    Immutable.fromJS(PROJECTS),
+                    'DESC',
+                )
+                    .entrySeq()
+                    .map(([
                         id,
-                        tech
-                    ]) => {
-                        return (
-                            <Tag key={id} tagName="li">{tech.get('name')}</Tag>
-                        );
-                    })}
-                </TagsGroup>
-            </div>
-        );
-    }
+                        tech,
+                    ]) => (
+                        <Tag key={id} tagName="li">{tech.get('name')}</Tag>
+                    ))}
+            </TagsGroup>
+        </div>
+    );
 }

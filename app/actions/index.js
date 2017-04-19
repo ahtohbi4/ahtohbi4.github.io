@@ -2,9 +2,9 @@
  * @param {object} text
  * @returns {object}
  */
-export const setPageTitle = (text) => {
+export function setPageTitle(text) {
     return {
         type: 'SET_PAGE_TITLE',
-        text
+        text,
     };
-};
+}

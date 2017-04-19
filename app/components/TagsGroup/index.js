@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Tag from '../Tag';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -13,3 +12,14 @@ export default function TagsGroup(props) {
         </ul>
     );
 }
+
+TagsGroup.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.node,
+        PropTypes.string,
+    ]),
+};
+
+TagsGroup.defaultProps = {
+    children: null,
+};

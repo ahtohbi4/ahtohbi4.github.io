@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-
+import React from 'react';
 import Immutable from 'immutable';
 
 import PROJECTS from '../../../data/projects.yaml';
@@ -13,48 +12,52 @@ import {
 import TagsGroup from '../../components/TagsGroup';
 import Tag from '../../components/Tag';
 
-/**
- * @class
- * @extends Component
- */
-export default class Projects extends Component {
-    render() {
-        const projects = Immutable.fromJS(PROJECTS);
+export default function Projects() {
+    const projects = Immutable.fromJS(PROJECTS);
 
-        return (
-            <div>
-                <h1>Projects ({projects.count()})</h1>
+    return (
+        <div>
+            <h1>Projects ({projects.count()})</h1>
 
-                <p>Some of my latest projects were collected here. Most of them are open source or were created in trying to understand some kind of technology.</p>
+            <p>
+                Some of my latest projects were collected here. Most of them are open source or were created in trying
+                to understand some kind of technology.
+            </p>
 
-                {projects.entrySeq().map(([
-                    id,
-                    project
-                ]) => {
-                    return (
-                        <div key={id}>
-                            <h3>{project.get('name')}</h3>
+            {projects.entrySeq().map(([
+                id,
+                project,
+            ]) => (
+                <div key={id}>
+                    <h3>{project.get('name')}</h3>
 
-                            <div dangerouslySetInnerHTML={{
-                                __html: project.get('description')
-                            }}/>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: project.get('description'),
+                        }}
+                    />
 
-                            {(project.get('tech') !== undefined) ? (
-                                <TagsGroup>
-                                    {techListSortedByUsage(techListByProject(Immutable.fromJS(TECH), project), projects, 'DESC').entrySeq().map(([
-                                        id,
-                                        tech
-                                    ]) => {
-                                        return (
-                                            <Tag key={id} tagName="li">{tech.get('name')}</Tag>
-                                        );
-                                    })}
-                                </TagsGroup>
-                            ) : null}
-                        </div>
-                    );
-                })}
-            </div>
-        );
-    }
+                    {(project.get('tech') !== undefined) ? (
+                        <TagsGroup>
+                            {techListSortedByUsage(
+                                techListByProject(
+                                    Immutable.fromJS(TECH),
+                                    project,
+                                ),
+                                projects,
+                                'DESC',
+                            )
+                                .entrySeq()
+                                .map(([
+                                    techId,
+                                    tech,
+                                ]) => (
+                                    <Tag key={techId} tagName="li">{tech.get('name')}</Tag>
+                                ))}
+                        </TagsGroup>
+                    ) : null}
+                </div>
+            ))}
+        </div>
+    );
 }

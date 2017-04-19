@@ -14,9 +14,14 @@ export default function Tag(props) {
 }
 
 Tag.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.node,
+        PropTypes.string,
+    ]),
     tagName: PropTypes.string,
 };
 
 Tag.defaultProps = {
+    children: null,
     tagName: 'div',
 };

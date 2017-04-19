@@ -1,13 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Sidebar from '../Sidebar';
 
 import './styles.css';
 
-/**
- * @class
- * @extends Component
- */
 export default function Layout(props) {
     const { children } = props;
 
@@ -21,3 +18,14 @@ export default function Layout(props) {
         </div>
     );
 }
+
+Layout.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.node,
+        PropTypes.string,
+    ]),
+};
+
+Layout.defaultProps = {
+    children: null,
+};
