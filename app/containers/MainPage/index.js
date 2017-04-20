@@ -32,13 +32,11 @@ export default class Main extends Component {
                 {person.get('links').entrySeq().map(([
                     type,
                     link,
-                ]) => {
-                    return (
-                        <div key={type}>
-                            <Icon type={type} /> <a href="{link}" target="_blank">{link}</a>
-                        </div>
-                    );
-                })}
+                ]) => (
+                    <div key={type}>
+                        <Icon type={type} /> <a href="{link}" target="_blank" rel="noopener noreferrer">{link}</a>
+                    </div>
+                ))}
 
                 <h2>Education</h2>
                 <p>

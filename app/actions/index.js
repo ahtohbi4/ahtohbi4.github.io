@@ -1,6 +1,6 @@
 /**
- * @param {object} text
- * @returns {object}
+ * @param {String} text
+ * @returns {Object}
  */
 export function setPageTitle(text) {
     return {
