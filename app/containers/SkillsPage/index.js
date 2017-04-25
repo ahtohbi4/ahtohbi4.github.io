@@ -5,31 +5,31 @@ import PROJECTS from '../../../data/projects.yaml';
 import TECH from '../../../data/tech.yaml';
 
 import {
-    techListSortedByUsage,
+  techListSortedByUsage,
 } from '../../../utils/techList';
 
 import TagsGroup from '../../components/TagsGroup';
 import Tag from '../../components/Tag';
 
 export default function Skills() {
-    return (
-        <div>
-            <h1>My skills</h1>
+  return (
+    <div>
+      <h1>My skills</h1>
 
-            <TagsGroup>
-                {techListSortedByUsage(
-                    Immutable.fromJS(TECH),
-                    Immutable.fromJS(PROJECTS),
-                    'DESC',
-                )
-                    .entrySeq()
-                    .map(([
-                        id,
-                        tech,
-                    ]) => (
-                        <Tag key={id} tagName="li">{tech.get('name')}</Tag>
-                    ))}
-            </TagsGroup>
-        </div>
-    );
+      <TagsGroup>
+        {techListSortedByUsage(
+          Immutable.fromJS(TECH),
+          Immutable.fromJS(PROJECTS),
+          'DESC',
+        )
+          .entrySeq()
+          .map(([
+            id,
+            tech,
+          ]) => (
+            <Tag key={id} tagName="li">{tech.get('name')}</Tag>
+          ))}
+      </TagsGroup>
+    </div>
+  );
 }
