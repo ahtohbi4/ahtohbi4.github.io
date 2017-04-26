@@ -9,19 +9,19 @@ const INITIAL_STATE = {
 };
 
 export default function (state = INITIAL_STATE, action) {
-    switch (action.type) {
-        case 'SET_PAGE_TITLE':
-            if (!action.text) {
-                // Not valid
-                return state;
-            }
+  switch (action.type) {
+    case 'SET_PAGE_TITLE':
+      if (!action.text) {
+        // Not valid
+        return state;
+      }
 
-            return {
-                ...state,
-                pageTitle: action.pageTitle,
-            };
+      return {
+        ...state,
+        pageTitle: action.pageTitle,
+      };
 
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 }
