@@ -19,7 +19,7 @@ export default function Experience() {
             const dateTo = new Date(job.dateTo);
 
             return (
-                <p>{dateFrom.getFullYear()}-{dateTo.getFullYear()}</p>
+              <p>{dateFrom.getFullYear()}-{dateTo.getFullYear()}</p>
             );
           })()}
         </div>

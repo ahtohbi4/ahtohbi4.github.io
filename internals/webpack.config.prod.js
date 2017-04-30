@@ -8,25 +8,25 @@ const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const {
-    AUTOPREFIXER,
-    CSSO,
-    POSTCSS_IMPORT,
-    POSTCSS_URL,
+  AUTOPREFIXER,
+  CSSO,
+  POSTCSS_IMPORT,
+  POSTCSS_URL,
 } = require('./config');
 
 module.exports = require('./webpack.config.base')({
-    // PostCSS plugins
-    postcssOptions: {
-        plugins: [
-            postcssImport(POSTCSS_IMPORT),
-            postcssUrl(POSTCSS_URL),
-            autoprefixer(AUTOPREFIXER),
-            postcssCsso(CSSO),
-        ],
-    },
-
+  // PostCSS plugins
+  postcssOptions: {
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin(),
-        new UglifyJSPlugin(),
+      postcssImport(POSTCSS_IMPORT),
+      postcssUrl(POSTCSS_URL),
+      autoprefixer(AUTOPREFIXER),
+      postcssCsso(CSSO),
     ],
+  },
+
+  plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new UglifyJSPlugin(),
+  ],
 });

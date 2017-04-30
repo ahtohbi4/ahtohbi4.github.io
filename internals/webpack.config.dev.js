@@ -6,39 +6,39 @@ const postcssUrl = require('postcss-url');
 const webpack = require('webpack');
 
 const {
-    HOST,
-    PORT,
+  HOST,
+  PORT,
 
-    AUTOPREFIXER,
-    POSTCSS_IMPORT,
-    POSTCSS_URL,
+  AUTOPREFIXER,
+  POSTCSS_IMPORT,
+  POSTCSS_URL,
 } = require('./config');
 
 module.exports = require('./webpack.config.base')({
-    devtool: 'eval',
+  devtool: 'eval',
 
-    watch: true,
+  watch: true,
 
-    entry: [
-        `webpack-dev-server/client?http://${HOST}:${PORT}`,
-        'webpack/hot/only-dev-server',
-    ],
+  entry: [
+    `webpack-dev-server/client?http://${HOST}:${PORT}`,
+    'webpack/hot/only-dev-server',
+  ],
 
-    // PostCSS plugins
-    postcssOptions: {
-        plugins: [
-            postcssImport(POSTCSS_IMPORT),
-            postcssUrl(POSTCSS_URL),
-            autoprefixer(AUTOPREFIXER),
-        ],
-    },
-
-    jsLoaders: [
-        'react-hot-loader',
-    ],
-
+  // PostCSS plugins
+  postcssOptions: {
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin(),
+      postcssImport(POSTCSS_IMPORT),
+      postcssUrl(POSTCSS_URL),
+      autoprefixer(AUTOPREFIXER),
     ],
+  },
+
+  jsLoaders: [
+    'react-hot-loader',
+  ],
+
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
+  ],
 });

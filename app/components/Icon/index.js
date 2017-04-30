@@ -5,10 +5,10 @@ export default function Icon() {
     <span
       className="icon"
       style={{
-          display: 'inline-block',
-          width: '20px',
-          height: '20px',
-          background: 'red',
+        display: 'inline-block',
+        width: '20px',
+        height: '20px',
+        background: 'red',
       }}
     />
   );
