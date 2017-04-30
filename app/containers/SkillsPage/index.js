@@ -18,8 +18,8 @@ export default function Skills() {
 
       <TagsGroup>
         {techListSortedByUsage(
-          Immutable.fromJS(TECH),
-          Immutable.fromJS(PROJECTS),
+          Immutable.fromJS(TECH.data),
+          Immutable.fromJS(PROJECTS.data),
           'DESC',
         )
           .entrySeq()

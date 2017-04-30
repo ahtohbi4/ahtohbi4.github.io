@@ -5,7 +5,7 @@ import shortid from 'shortid';
 import EXPERIENCE from '../../../data/experience.yaml';
 
 export default function Experience() {
-  const experienceReversed = Immutable.List(EXPERIENCE).reverse();
+  const experienceReversed = Immutable.List(EXPERIENCE.data).reverse();
 
   return (
     <div>

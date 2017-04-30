@@ -7,242 +7,100 @@
  # @property {Array} [tech] - IDs of technologies from tech.yaml.
  ##
 
-0:
+data:
+  0:
     name: _this
     source: https://github.com/ahtohbi4/ahtohbi4.github.io
     description: >
-        <p>This site-presentation.</p>
-    tech:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 6
-        - 7
-        - 10
-        - 11
-        - 12
-        - 13
-        - 14
-        - 16
-        - 17
-        - 20
-        - 21
-        - 24
-        - 25
-        - 26
-        - 27
-        - 32
-        - 36
-1:
+      <p>This site-presentation.</p>
+    tech: [0, 1, 2, 3, 6, 7, 10, 11, 12, 13, 14, 16, 17, 20, 21, 24, 25, 26, 27, 32, 36]
+  1:
     name: Tic-Tac-Toe
     source: https://github.com/ahtohbi4/tic-tac-toe
     description: >
-        <p>Browser game <a href="http://ahtohbi4.github.io/tic-tac-toe/build/">http://ahtohbi4.github.io/tic-tac-toe/build/</a> with flexible settings.</p>
-    tech:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 9
-        - 11
-        - 12
-        - 13
-        - 14
-        - 16
-        - 17
-        - 18
-        - 19
-        - 20
-        - 21
-        - 24
-        - 32
-2:
+      <p>Browser game <a href="http://ahtohbi4.github.io/tic-tac-toe/build/">http://ahtohbi4.github.io/tic-tac-toe/build/</a> with flexible settings.</p>
+    tech: [0, 1, 2, 3, 4, 9, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 24, 32]
+  2:
     name: Poker
     source: https://github.com/ahtohbi4/poker
     description: >
-        <p>Poker game for single player <a href="http://ahtohbi4.github.io/poker/">http://ahtohbi4.github.io/poker/</a>.</p>
-        <p>To see the game in developing mode jast open it with GET-parameter ?env=dev: <a href="http://ahtohbi4.github.io/poker/?env=dev">http://ahtohbi4.github.io/poker/?env=dev</a>.</p>
-    tech:
-        - 0
-        - 1
-        - 2
-        - 5
-        - 7
-        - 10
-        - 11
-        - 12
-        - 13
-        - 15
-        - 16
-        - 17
-        - 18
-        - 19
-        - 22
-        - 24
-        - 30
-        - 31
-3:
+      <p>Poker game for single player <a href="http://ahtohbi4.github.io/poker/">http://ahtohbi4.github.io/poker/</a>.</p>
+      <p>To see the game in developing mode jast open it with GET-parameter ?env=dev: <a href="http://ahtohbi4.github.io/poker/?env=dev">http://ahtohbi4.github.io/poker/?env=dev</a>.</p>
+    tech: [0, 1, 2, 5, 7, 10, 11, 12, 13, 15, 16, 17, 18, 19, 22, 24, 30, 31]
+  3:
     name: postcss-bgimage
     source: https://www.npmjs.com/package/postcss-bgimage
     description: >
-        <p>PostCSS plug-in which removes background-image properties with url() values or leaves only its. It allows to separate your layouts CSS from the images CSS to boost a speed of showing a page.</p>
-    tech:
-        - 0
-        - 6
-        - 7
-        - 9
-        - 11
-        - 12
-        - 17
-        - 18
-        - 20
-        - 21
-        - 23
-        - 24
-        - 27
-        - 30
-4:
-    name: matrix-slicer
-    source: https://www.npmjs.com/package/matrix-slicer
-    description: >
+      <p>PostCSS plug-in which removes background-image properties with url() values or leaves only its. It allows to separate your layouts CSS from the images CSS to boost a speed of showing a page.</p>
+    tech: [0, 6, 7, 9, 11, 12, 17, 18, 20, 21, 23, 24, 27, 30]
+  4:
+      name: matrix-slicer
+      source: https://www.npmjs.com/package/matrix-slicer
+      description: >
         <p>Open source JavaScript utility for slicing a matrix into elements, columns, rows, diagonals and submatrices.</p>
-    tech:
-        - 0
-        - 6
-        - 7
-        - 9
-        - 11
-        - 17
-        - 18
-        - 20
-        - 21
-        - 23
-        - 24
-        - 27
-5:
-    name: express-routes-dispatcher
-    source: https://www.npmjs.com/package/express-routes-dispatcher
-    description: >
+      tech: [0, 6, 7, 9, 11, 17, 18, 20, 21, 23, 24, 27]
+  5:
+      name: express-routes-dispatcher
+      source: https://www.npmjs.com/package/express-routes-dispatcher
+      description: >
         <p>MVC Routing based on JSON for <!--noindex--><a href="http://expressjs.com/" rel="nofollow">Express</a><!--/noindex-->.</p>
         <p>In this implementation the routing is based on JSON format, which is a map from a URL path to a controller (Controller) to processes the request and finally to a template (View) to visualize a response.</p>
         <p>Format is similar to syntax of <!--noindex--><a href="https://symfony.com/doc/current/routing.html" rel="nofollow">Symfony</a><!--/noindex--> YAML based Routing.</p>
-    tech:
-        - 0
-        - 5
-        - 7
-        - 9
-        - 11
-        - 17
-        - 18
-        - 20
-        - 21
-        - 23
-        - 24
-        - 28
-        - 29
-        - 30
-        - 34
-6:
+      tech: [0, 5, 7, 9, 11, 17, 18, 20, 21, 23, 24, 28, 29, 30, 34]
+  6:
     name: HTML5 layout
     source: https://github.com/ahtohbi4/layout
     description: >
-        <p>Base HTML5 layout for modern web applications.</p>
-    tech:
-        - 1
-        - 11
-        - 17
-        - 18
-7:
+      <p>Base HTML5 layout for modern web applications.</p>
+    tech: [1, 11, 17, 18]
+  7:
     name: Typography
     source: https://github.com/ahtohbi4/typography
     description: >
-        <p>Visual helper in HTML5 typography <a href="http://ahtohbi4.github.io/typography/">http://ahtohbi4.github.io/typography/</a>.</p>
-    tech:
-        - 0
-        - 1
-        - 2
-        - 10
-        - 11
-        - 13
-        - 15
-        - 16
-        - 17
-        - 22
-        - 24
-8:
+      <p>Visual helper in HTML5 typography <a href="http://ahtohbi4.github.io/typography/">http://ahtohbi4.github.io/typography/</a>.</p>
+    tech: [0, 1, 2, 10, 11, 13, 15, 16, 17, 22, 24]
+  8:
     name: Code Guide
     source: https://github.com/ahtohbi4/code-guide
     description: >
-        <p>My code style in CSS, HTML, JavaScript, and number of configs and other settings.</p>
-9:
+      <p>My code style in CSS, HTML, JavaScript, and number of configs and other settings.</p>
+  9:
     name: PostTXT
     source: https://github.com/ahtohbi4/posttxt
     description: >
-        <p><em>Under construction.</em></p>
-        <p>The text parser for any languages.</p>
-    tech:
-        - 0
-        - 6
-        - 7
-        - 11
-        - 17
-        - 18
-        - 20
-        - 21
-        - 23
-        - 24
-        - 27
-10:
+      <p><em>Under construction.</em></p>
+      <p>The text parser for any languages.</p>
+    tech: [0, 6, 7, 11, 17, 18, 20, 21, 23, 24, 27]
+  10:
     name: Page with a history of balloons
     source: https://github.com/ahtohbi4/balloons-page
     description: >
-        <p>Pages for testing plugin <a href="https://www.npmjs.com/package/postcss-bgimage">postcss-bgimage</a>.</p>
-        <ul>
-            <li>
-                <a href="http://ahtohbi4.github.io/balloons-page/build/without-plugin/">http://ahtohbi4.github.io/balloons-page/build/without-plugin/</a>
-            </li>
-            <li>
-                <a href="http://ahtohbi4.github.io/balloons-page/build/with-plugin/">http://ahtohbi4.github.io/balloons-page/build/with-plugin/</a>
-            </li>
-        </ul>
-    tech:
-        - 1
-        - 2
-        - 11
-        - 12
-        - 13
-        - 15
-        - 16
-        - 17
-        - 18
-        - 24
-11:
+      <p>Pages for testing plugin <a href="https://www.npmjs.com/package/postcss-bgimage">postcss-bgimage</a>.</p>
+      <ul>
+        <li>
+          <a href="http://ahtohbi4.github.io/balloons-page/build/without-plugin/">http://ahtohbi4.github.io/balloons-page/build/without-plugin/</a>
+        </li>
+        <li>
+          <a href="http://ahtohbi4.github.io/balloons-page/build/with-plugin/">http://ahtohbi4.github.io/balloons-page/build/with-plugin/</a>
+        </li>
+      </ul>
+    tech: [1, 2, 11, 12, 13, 15, 16, 17, 18, 24]
+  11:
     name: sublime-text-bem-creator
     source: https://github.com/ahtohbi4/sublime-text-bem-creator
     description: >
-        <p>Plugin for Sublime Text 2 to create BEM-entities containing templates of technologies:</p>
-        <ul>
-            <li>*.bemhtml</li>
-            <li>*.css</li>
-            <li>*.deps.js</li>
-            <li>*.js</li>
-        </ul>
-    tech:
-        - 11
-        - 13
-        - 17
-        - 30
-        - 35
-12:
+      <p>Plugin for Sublime Text 2 to create BEM-entities containing templates of technologies:</p>
+      <ul>
+        <li>*.bemhtml</li>
+        <li>*.css</li>
+        <li>*.deps.js</li>
+        <li>*.js</li>
+      </ul>
+    tech: [11, 13, 17, 30, 35]
+  12:
     name: gulp-css-bgimage
     source: https://github.com/ahtohbi4/gulp-css-bgimage
     description: >
-        <p><em>Deprecated. Use PostCSS plugin postcss-bgimage instead.</em></p>
-        <p>Plug-in for Gulp which removes background-image properties with url() values or leaves only its. It allows to separate your layouts CSS from the images CSS to boost a speed of showing a page.</p>
-    tech:
-        - 0
-        - 11
-        - 15
-        - 17
+      <p><em>Deprecated. Use PostCSS plugin postcss-bgimage instead.</em></p>
+      <p>Plug-in for Gulp which removes background-image properties with url() values or leaves only its. It allows to separate your layouts CSS from the images CSS to boost a speed of showing a page.</p>
+    tech: [0, 11, 15, 17]

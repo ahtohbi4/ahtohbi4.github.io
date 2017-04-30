@@ -13,7 +13,7 @@ import TagsGroup from '../../components/TagsGroup';
 import Tag from '../../components/Tag';
 
 export default function Projects() {
-  const projects = Immutable.fromJS(PROJECTS);
+  const projects = Immutable.fromJS(PROJECTS.data);
 
   return (
     <div>
@@ -41,7 +41,7 @@ export default function Projects() {
             <TagsGroup>
               {techListSortedByUsage(
                 techListByProject(
-                  Immutable.fromJS(TECH),
+                  Immutable.fromJS(TECH.data),
                   project,
                 ),
                 projects,

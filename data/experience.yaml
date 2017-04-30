@@ -8,15 +8,16 @@
  # @property {String} descroption
  ##
 
--
+data:
+  -
     dateFrom: 2005-01-01
     dateTo: 2008-01-10
     position: designer
     description: >
-        <p>Text</p>
--
+      <p>Text</p>
+  -
     dateFrom: 2008-01-01
     dateTo: 2008-12-01
     position: HTML-coder
     descroption: >
-        <p>Text</p>
+      <p>Text</p>

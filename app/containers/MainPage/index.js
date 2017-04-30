@@ -13,7 +13,7 @@ import './styles.css';
  */
 export default class Main extends Component {
   render() {
-    const person = Immutable.fromJS(PERSON);
+    const person = Immutable.fromJS(PERSON.data);
 
     const age = ((/* @type {Date} */ dateOfBirth) => {
       const ageDifMs = Date.now() - dateOfBirth;

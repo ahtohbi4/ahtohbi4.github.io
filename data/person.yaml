@@ -10,16 +10,17 @@
  # @property {String} contacts.phone
  ##
 
-name: Alexandr Antonov
-nick: ahtohbi4
-dateOfBirth: 1985-01-21
-place: Moscow, Russia
+data:
+  name: Alexandr Antonov
+  nick: ahtohbi4
+  dateOfBirth: 1985-01-21
+  place: Moscow, Russia
 
-contacts:
+  contacts:
     email: alexandr-post@yandex.ru
     phone: +7****
 
-links:
+  links:
     GitHub: https://github.com/ahtohbi4
     LinkedIn: https://www.linkedin.com/in/ahtohbi4
     Twitter: https://twitter.com/_alex_antonov_
