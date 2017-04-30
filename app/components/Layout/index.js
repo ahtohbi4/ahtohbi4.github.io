@@ -6,26 +6,26 @@ import Sidebar from '../Sidebar';
 import './styles.css';
 
 export default function Layout(props) {
-    const { children } = props;
+  const { children } = props;
 
-    return (
-        <div className="layout">
-            <Sidebar />
+  return (
+    <div className="layout">
+      <Sidebar />
 
-            <div className="layout__content">
-                {children}
-            </div>
-        </div>
-    );
+      <div className="layout__content">
+        {children}
+      </div>
+    </div>
+  );
 }
 
 Layout.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.node,
-        PropTypes.string,
-    ]),
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+  ]),
 };
 
 Layout.defaultProps = {
-    children: null,
+  children: null,
 };
