@@ -5,114 +5,115 @@
  # @property {String} [description] - Multiline description. May contain an HTML-tags.
  ##
 
-0:
+data:
+  0:
     name: JavaScript
     source: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-1:
+  1:
     name: HTML
     source: http://w3c.github.io/html/single-page.html
     description: >
         <p>HTML is a base of UI. Semantics, accessibility, adaptivity and other beautiful terms. =)</p>
-2:
+  2:
     name: CSS
     source: https://www.w3.org/Style/CSS/#specs
     description: >
         <p>A lot of new features of CSS is available in modern browsers now. Other ones will be available soon.</p>
-3:
+  3:
     name: React
     source: https://facebook.github.io/react/
-4:
+  4:
     name: Redux
     source: http://redux.js.org/
-5:
+  5:
     name: Jasmine
     source: http://jasmine.github.io/edge/introduction.html
-6:
+  6:
     name: Mocha
     source: https://mochajs.org/
-7:
+  7:
     name: BDD
     source: https://en.wikipedia.org/wiki/Behavior-driven_development
-9:
+  9:
     name: Node.js
     source: https://nodejs.org/en/
-10:
+  10:
     name: jQuery
     source: https://jquery.com/
-11:
+  11:
     name: Git
     source: https://git-scm.com/
-12:
+  12:
     name: PostCSS
     source: http://postcss.org/
-13:
+  13:
     name: BEM methodology
     source: https://en.bem.info/methodology/
-14:
+  14:
     name: Webpack
     source: https://webpack.github.io/
-15:
+  15:
     name: Gulp
     source: http://gulpjs.com/
-16:
+  16:
     name: Normalize.css
     source: https://necolas.github.io/normalize.css/
-17:
+  17:
     name: GitHub
     source: https://github.com/
-18:
+  18:
     name: Travis CI
     source: https://travis-ci.org/
-19:
+  19:
     name: bitHound
     source: https://www.bithound.io/
-20:
+  20:
     name: ES6
     source: https://tc39.github.io/ecma262/
-21:
+  21:
     name: Babel
     source: https://babeljs.io/
-22:
+  22:
     name: RequireJS
     source: http://requirejs.org/
-23:
+  23:
     name: AppVeyor
     source: https://www.appveyor.com/
-24:
+  24:
     name: npm
     source: https://www.npmjs.com/
-25:
+  25:
     name: react-router
     source: https://github.com/ReactTraining/react-router
-26:
+  26:
     name: immutable.js
     source: https://facebook.github.io/immutable-js/
-27:
+  27:
     name: Chai
     source: http://chaijs.com/
-28:
+  28:
     name: Twig
     source: http://twig.sensiolabs.org/
-29:
+  29:
     name: Express
     source: http://expressjs.com/
-30:
+  30:
     name: Codacy
     source: https://www.codacy.com/
-31:
+  31:
     name: Underscore.js
     source: http://underscorejs.org/
-32:
+  32:
     name: JSX
     source: https://facebook.github.io/jsx/
-33:
+  33:
     name: Linux (Ubuntu)
-34:
+  34:
     name: Lodash
     source: https://lodash.com/
-35:
+  35:
     name: Python
     source: https://www.python.org/
-36:
+  36:
     name: Bash
     source: http://www.gnu.org/software/bash/
