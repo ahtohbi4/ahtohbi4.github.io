@@ -5,6 +5,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
+/* eslint-disable import/no-webpack-loader-syntax, import/no-unresolved */
+import '!file-loader?name=[name].[ext]!./favicon.ico';
+/* eslint-disable */
+
 import Routes from './routes';
 import store from './store';
 
