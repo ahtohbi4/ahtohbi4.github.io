@@ -20,7 +20,7 @@
   "pre-commit": "lint:staged",
   "repository": "https://github.com/ahtohbi4/ahtohbi4.github.io",
   "author": "Alexandr Antonov",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ahtohbi4/ahtohbi4.github.io/issues"
   },
