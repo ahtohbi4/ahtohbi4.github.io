@@ -29,4 +29,17 @@ module.exports = require('./webpack.config.base')({
     new webpack.optimize.OccurrenceOrderPlugin(),
     new UglifyJSPlugin(),
   ],
+
+  htmlPlugin: {
+    inject: true,
+    minify: {
+      collapseWhitespace: true,
+      minifyJS: true,
+      minifyURLs: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      removeRedundantAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+    },
+  },
 });

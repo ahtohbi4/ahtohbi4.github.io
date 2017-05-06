@@ -78,9 +78,9 @@ module.exports = (options) => ({
   },
 
   plugins: options.plugins.concat([
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin(Object.assign({
       template: path.join(baseDir, 'app/index.html'),
-    }),
+    }, options.htmlPlugin)),
     new webpack.DefinePlugin({
       __DEV__: isDev,
       'process.env': {
