@@ -16,3 +16,6 @@
 [submodule "balloons-page"]
 	path = balloons-page
 	url = https://github.com/ahtohbi4/balloons-page.git
+[submodule "pokemon"]
+	path = pokemon
+	url = git@github.com:ahtohbi4/pokemon.git
